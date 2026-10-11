@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#f0b987" />
+        <title>
+            OpenWear — a community-driven, open-source custom ROM for Wear OS
+        </title>
+        <meta name="description" content="Researching and reverse-engineering Wear OS to build a community-driven, open-source custom ROM for smartwatches." />
+		<link rel="preconnect" href="https://fonts.bunny.net">
+		<link href="https://fonts.bunny.net/css?family=boogaloo:400" rel="stylesheet" />
+        <link href="/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header class="nav">
+            <div class="wrap nav-inner">
+                <a class="brand" href="#top">
+                    <img src="/nyawach.svg" width="38" alt="nywach icon" /><span>OpenWearOS</span></a>
+                <nav class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#pillars">What we do</a>
+                    <a href="#roadmap">Roadmap</a>
+                    <a href="#contribute">Contribute</a>
+                </nav>
+                <a class="btn btn-primary btn-sm gh-ico" href="https://github.com/OpenWearOS" target="_blank" rel="noopener">GitHub &#x2197;</a>
+            </div>
+        </header>
+
+        <section class="top-section" id="top">
+            <div class="wrap main-grid">
+                <div>
+                    <h1>
+                        We take <span class="hl">Wear OS</span> apart — and rebuild it in
+                        the open.
+                    </h1>
+                    <p class="lede">
+                        Researching and reverse-engineering Wear OS to build a
+                        community-driven, open-source custom ROM for smartwatches. Owned by
+                        the people who actually wear it.
+                    </p>
+                    <div class="btns">
+                        <a class="btn btn-primary gh-ico" href="https://github.com/OpenWearOS" target="_blank" rel="noopener">Star on GitHub</a>
+                        <a class="btn" href="#about">Read the docs</a>
+                    </div>
+                </div>
+                <img src="/nyawach-text.svg" alt="This is NyaWach" class="nyawach-art" />
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="wrap">
+                <div class="section-head">
+                    <div class="eyebrow">The problem</div>
+                    <h2>Your watch is the most personal computer you own.</h2>
+                    <p>
+                        Bootloaders are locked, system images are opaque, and once a
+                        manufacturer stops caring, perfectly good hardware becomes e-waste.
+                    </p>
+                </div>
+                <div class="split">
+                    <div>
+                        <p>
+                            We're doing the slow, unglamorous work of figuring out how Wear OS
+                            actually boots, flashes and updates — then writing all of it down
+                            so nobody has to start from zero again.
+                        </p>
+                        <p>
+                            Every payload dump, partition table, boot chain and vendor
+                            interface we making a building block for an open ROM that anyone
+                            can compile, audit and improve. No secret sauce, no private
+                            Discord handshakes, no "trust us".
+                        </p>
+                    </div>
+                    <ul class="checklist">
+                        <li>
+                            <span class="tick"></span> Read-only, non-destructive tooling
+                            first
+                        </li>
+                        <li>
+                            <span class="tick"></span> Decisions made in issues, not in DMs
+                        </li>
+                        <li>
+                            <span class="tick"></span> Builds you can reproduce byte-for-byte
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="pillars">
+            <div class="wrap">
+                <div class="section-head">
+                    <div class="eyebrow">What we do</div>
+                    <h2>Three jobs, done properly.</h2>
+                    <p>
+                        Reverse-engineer what exists, build what should exist, and keep it
+                        open to everyone.
+                    </p>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-title">
+                            <img src="data:image/svg+xml,%3Csvg fill='%23000' version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 512.001 512.001' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M340.319,144.196H171.677c-15.154,0-27.483,12.33-27.483,27.486v168.649c0,15.149,12.329,27.474,27.483,27.474h168.641 c15.154,0,27.484-12.325,27.484-27.474V171.682C367.802,156.526,355.473,144.196,340.319,144.196z M346.578,340.204 c0,3.611-2.93,6.55-6.531,6.55h-168.1c-3.601-0.001-6.531-2.939-6.531-6.55V171.808c0-3.62,2.93-6.563,6.531-6.563h168.1 c3.602,0,6.531,2.943,6.531,6.563V340.204z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Cpath d='M363.111,111.482V33.366C363.111,14.967,348.163,0,329.788,0H182.213c-18.375,0-33.323,14.967-33.323,33.366v78.122 c-23.762,7.9-40.22,30.172-40.22,55.991v177.045c0,25.822,16.464,48.098,40.22,55.994v78.12c0,18.396,14.948,33.364,33.323,33.364 h147.575c18.375,0,33.323-14.966,33.323-33.364v-78.117c23.761-7.91,40.22-30.185,40.22-55.996V167.478 C403.331,141.669,386.876,119.396,363.111,111.482z M169.788,33.366c0-6.874,5.573-12.468,12.425-12.468h147.575 c6.851,0,12.425,5.593,12.425,12.468v75.064H169.788V33.366z M342.214,478.636L342.214,478.636 c-0.001,6.873-5.575,12.466-12.426,12.466H182.213c-6.851,0-12.425-5.592-12.425-12.466V403.57h172.426V478.636z M382.433,344.524 c0,18.675-13.308,34.492-31.633,37.608h-0.001c-1.594,0.27-3.208,0.439-4.819,0.507c-0.537,0.023-1.074,0.033-1.609,0.033H167.636 c-2.142,0-4.301-0.184-6.432-0.549c-18.332-3.109-31.635-18.922-31.635-37.6V167.478c0-18.679,13.304-34.492,31.658-37.604 c2.109-0.364,4.265-0.547,6.408-0.547h176.736c2.141,0,4.304,0.182,6.427,0.541c18.332,3.121,31.635,18.936,31.635,37.609V344.524 z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Cpath d='M261.245,231.659c-5.663-1.107-11.153,2.581-12.264,8.244l-15.269,77.875c-1.112,5.663,2.58,11.154,8.243,12.264 c0.678,0.133,1.355,0.196,2.022,0.196c4.895,0,9.265-3.457,10.242-8.441l15.269-77.875 C270.599,238.26,266.908,232.769,261.245,231.659z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Cpath d='M270.724,183.307c-5.664-1.107-11.153,2.581-12.264,8.244l-3.943,20.115c-1.111,5.662,2.58,11.153,8.243,12.264 c0.678,0.133,1.355,0.196,2.022,0.196c4.895,0,9.265-3.457,10.242-8.441l3.943-20.115 C280.078,189.908,276.387,184.417,270.724,183.307z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Cpath d='M335.288,256.773c-0.008-0.18-0.009-0.36-0.026-0.54c-0.014-0.146-0.043-0.291-0.063-0.436 c-0.026-0.187-0.045-0.374-0.082-0.559c-0.027-0.138-0.068-0.274-0.1-0.411c-0.045-0.19-0.084-0.38-0.139-0.568 c-0.041-0.138-0.096-0.273-0.143-0.41c-0.063-0.183-0.119-0.368-0.192-0.547c-0.052-0.129-0.118-0.253-0.176-0.379 c-0.084-0.184-0.161-0.369-0.255-0.549c-0.061-0.115-0.134-0.225-0.199-0.337c-0.107-0.185-0.208-0.373-0.327-0.553 c-0.07-0.106-0.153-0.205-0.227-0.309c-0.129-0.181-0.254-0.363-0.396-0.537c-0.074-0.091-0.161-0.174-0.238-0.264 c-0.154-0.176-0.303-0.353-0.47-0.521l-37.109-37.175c-4.077-4.084-10.693-4.092-14.777-0.014 c-4.085,4.079-4.09,10.696-0.014,14.779l29.74,29.794l-29.183,29.235c-4.076,4.083-4.071,10.7,0.014,14.777 c2.04,2.036,4.71,3.054,7.381,3.054c2.677,0,5.355-1.023,7.396-3.068l36.551-36.617c0.122-0.122,0.228-0.253,0.343-0.379 c0.123-0.136,0.254-0.267,0.368-0.409c0.107-0.131,0.198-0.267,0.296-0.402c0.109-0.147,0.226-0.292,0.326-0.444 c0.091-0.137,0.166-0.281,0.25-0.421c0.093-0.157,0.192-0.309,0.277-0.469c0.074-0.142,0.134-0.289,0.202-0.434 c0.077-0.164,0.161-0.326,0.229-0.493c0.06-0.148,0.105-0.3,0.158-0.45c0.06-0.169,0.126-0.335,0.177-0.507 c0.045-0.154,0.075-0.309,0.114-0.465c0.042-0.171,0.092-0.342,0.125-0.514c0.03-0.157,0.046-0.315,0.069-0.472 c0.025-0.175,0.059-0.347,0.075-0.521c0.015-0.156,0.015-0.311,0.023-0.467c0.009-0.179,0.025-0.356,0.025-0.534 C335.31,257.081,335.296,256.928,335.288,256.773z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Cpath d='M231.979,286.472l-29.741-29.794l29.183-29.236c4.076-4.083,4.071-10.7-0.014-14.777 c-4.084-4.077-10.7-4.071-14.778,0.014l-36.552,36.617c-0.122,0.122-0.228,0.253-0.343,0.379 c-0.123,0.136-0.254,0.267-0.368,0.409c-0.107,0.131-0.197,0.267-0.296,0.402c-0.109,0.147-0.226,0.292-0.326,0.444 c-0.093,0.141-0.171,0.288-0.257,0.434c-0.09,0.153-0.187,0.301-0.27,0.457c-0.077,0.147-0.139,0.3-0.209,0.449 c-0.074,0.16-0.156,0.316-0.222,0.479c-0.06,0.148-0.106,0.3-0.158,0.45c-0.06,0.169-0.126,0.335-0.177,0.507 c-0.047,0.159-0.078,0.321-0.118,0.481c-0.041,0.166-0.089,0.33-0.121,0.497c-0.032,0.168-0.049,0.339-0.074,0.508 c-0.023,0.162-0.054,0.324-0.07,0.487c-0.017,0.173-0.018,0.348-0.025,0.522c-0.007,0.16-0.022,0.319-0.022,0.479 c0.001,0.176,0.017,0.354,0.026,0.532c0.008,0.156,0.008,0.311,0.023,0.467c0.018,0.181,0.051,0.36,0.077,0.541 c0.022,0.15,0.037,0.303,0.066,0.452c0.037,0.191,0.091,0.379,0.139,0.569c0.034,0.136,0.061,0.274,0.1,0.41 c0.059,0.2,0.135,0.395,0.206,0.591c0.044,0.121,0.079,0.246,0.129,0.366c0.083,0.205,0.183,0.402,0.279,0.603 c0.052,0.108,0.095,0.218,0.15,0.324c0.11,0.208,0.236,0.41,0.36,0.611c0.056,0.092,0.104,0.188,0.165,0.278 c0.136,0.206,0.289,0.403,0.442,0.602c0.062,0.08,0.115,0.164,0.18,0.243c0.158,0.193,0.332,0.376,0.505,0.56 c0.071,0.075,0.134,0.157,0.208,0.231l0.008,0.008c0.002,0.002,0.003,0.003,0.005,0.005c0.002,0.001,0.003,0.003,0.005,0.004 l37.092,37.158c2.041,2.045,4.718,3.068,7.395,3.068c2.671,0,5.343-1.019,7.382-3.054 C236.051,297.173,236.057,290.557,231.979,286.472z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E" alt="" />
+                            <h3>Reverse engineering</h3>
+                        </div>
+                        <p>
+                            OTA payload teardown, partition layouts, boot chains, AVB, and
+                            vendor blobs. Every finding lands in a public write-up with the
+                            exact commands to reproduce it.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='currentColor' stroke-width='4'%3E%3Crect width='24' height='36' x='12' y='6' rx='2'/%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12 12H6m6 8H6m6 8H6m6 8H6m36-24h-6m6 8h-6m6 8h-6m6 8h-6'/%3E%3C/g%3E%3C/svg%3E" alt="" />
+                            <h3>A custom ROM</h3>
+                        </div>
+                        <p>
+                            A clean, de-Googled Wear OS base built from source. Fast, battery
+                            friendly, and yours to modify - from the launcher down to the
+                            kernel.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.5'%3E%3Cpath d='M5 13V5l4 4c1 -0.5 5 -0.5 6 0l4 -4v8c1 2 1 5 -1 7S8 22 6 20s-2 -5 -1 -7'/%3E%3Cpath d='m10 15 2 2 2 -2'/%3E%3C/g%3E%3C/svg%3E" alt="" />
+                            <h3>Community</h3>
+                        </div>
+                        <p>
+                            No single owner. Issues, docs, and roadmap decisions live in the
+                            open. If you can flash a watch, you can help shape what runs on
+                            it.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="roadmap">
+            <div class="wrap">
+                <div class="section-head">
+                    <div class="eyebrow">Roadmap</div>
+                    <h2>Where we are, and where we're headed.</h2>
+                    <p>
+                        Everything below is tracked publicly - statuses change as the work
+                        lands, not as it's announced.
+                    </p>
+                </div>
+                <div class="roadmap">
+                    <div class="phase">
+                        <div class="num">0</div>
+                        <div class="body">
+                            <h3>Recon</h3>
+                            <p>
+                                OTA capture, partition mapping, bootloader and AVB notes, and a
+                                device compatibility matrix for the watches we can actually get
+                                our hands on.
+                            </p>
+                        </div>
+                        <span class="status wip">In progress</span>
+                    </div>
+                    <div class="phase">
+                        <div class="num">1</div>
+                        <div class="body">
+                            <h3>Toolchain</h3>
+                            <p>
+                                Reproducible build scripts, read-only dump and flash utilities,
+                                and an image signing pipeline that anyone can run locally.
+                            </p>
+                        </div>
+                        <span class="status wip">In progress</span>
+                    </div>
+                    <div class="phase">
+                        <div class="num">2</div>
+                        <div class="body">
+                            <h3>Base system</h3>
+                            <p>
+                                An AOSP-derived Wear base, HAL bring-up on reference hardware,
+                                and the first flashable community builds.
+                            </p>
+                        </div>
+                        <span class="status next">Planned</span>
+                    </div>
+                    <div class="phase">
+                        <div class="num">3</div>
+                        <div class="body">
+                            <h3>Community builds</h3>
+                            <p>
+                                Per-device ports, a self-hosted OTA update server, contributor
+                                documentation, and a stable release channel.
+                            </p>
+                        </div>
+                        <span class="status next">Planned</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contribute">
+            <div class="wrap">
+                <div class="section-head">
+                    <div class="eyebrow">Contribute</div>
+                    <h2>You don't need to be a kernel wizard.</h2>
+                    <p>
+                        There's a place for almost every skill here - including the ones
+                        that don't involve code at all.
+                    </p>
+                </div>
+                <div class="split">
+                    <ul class="checklist">
+                        <li>
+                            <span class="tick"></span><span><strong>Test on your watch.</strong> Report what boots, what
+                                breaks, and what drains the battery.</span>
+                        </li>
+                        <li>
+                            <span class="tick"></span><span><strong>Document what you find.</strong> A clear write-up is
+                                worth more than a clever patch.</span>
+                        </li>
+                        <li>
+                            <span class="tick"></span><span><strong>Build tooling.</strong> Scripts, CI, signing,
+                                reproducible builds — the plumbing matters.</span>
+                        </li>
+                        <li>
+                            <span class="tick"></span><span><strong>Design.</strong> Watch faces, themes, icons, and docs
+                                that don't make people's eyes bleed.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="note" style="margin-top: 46px">
+                    <h3>
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M2.7 21q-0.3 0-0.5-0.1t-0.3-0.4t-0.1-0.5t0.1-0.5l9.3-16q0.2-0.20.4-0.4T12 3t0.50.1t0.40.4l9.3 16q0.20.30.10.5t-0.10.5t-0.30.4t-0.50.1zm10-3.3Q13 17.4 13 17t-0.3-0.7T12 16t-0.70.3T11 17t0.30.7T12 18t0.7-0.3m0-3Q13 14.4 13 14v-3q0-0.4-0.3-0.7T12 10t-0.70.3T11 11v3q0 0.40.30.7T12 15t0.7-0.3'/%3E%3C/svg%3E" alt="" width="22" />
+                        Educational and legal notice
+                    </h3>
+                    <p>
+                        This project is not affiliated with, endorsed by, or supported by
+                        Google or any smartwatch manufacturer. We do not distribute
+                        proprietary vendor blobs or Google applications - bring your own
+                        device, and make sure you're actually allowed to unlock it. Flashing
+                        custom firmware <span class="hl">can brick your watch</span> and
+                        void your warranty. You've been warned, kindly.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-band">
+            <div class="wrap">
+                <div class="cta">
+                    <h2>Got a watch, a laptop, and some free time?</h2>
+                    <p>
+                        That's genuinely all it takes. Start with a device dump, open an
+                        issue, and say hello - docs are waiting for your corner of the
+                        ecosystem.
+                    </p>
+                    <div class="btns">
+                        <a class="btn btn-primary" href="https://github.com/OpenWearOS" target="_blank" rel="noopener">Contribute on GitHub</a><a class="btn" href="#roadmap">See the roadmap</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="wrap">
+                <div class="foot-grid">
+                    <div>
+                        <div class="foot-brand">
+                            <img src="/nyawach.svg" width="38" /><span>OpenWearOS</span>
+                        </div>
+                        <p class="foot-tag">
+                            Researching and reverse-engineering Wear OS to build a
+                            community-driven, open-source custom ROM for smartwatches.
+                        </p>
+                    </div>
+                    <div class="foot-links">
+                        <div class="foot-col">
+                            <h4>Project</h4>
+                            <ul>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#roadmap">Roadmap</a></li>
+                                <li><a href="#contribute">Contribute</a></li>
+                            </ul>
+                        </div>
+                        <div class="foot-col">
+                            <h4>Community</h4>
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/orgs/OpenWearOS/discussions" target="_blank" rel="noopener">GitHub</a>
+                                </li>
+                                <li><a href="#">Chat</a></li>
+                            </ul>
+                        </div>
+                        <div class="foot-col">
+                            <h4>Resources</h4>
+                            <ul>
+                                <li><a href="#">Documentation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot-bottom">
+                    <span>© 2026 OpenWearOS contributors. Not affiliated with Google.</span><span>Built in the open, one partition at a time.</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
